@@ -245,6 +245,31 @@ composite_moniker:
     strings:
         - CompositeMoniker
         - FileMoniker
+        - NewMoniker
+
+soap_moniker:
+    added_by: David Cannings
+    description: "Soap Moniker, used in CVE-2017-8759"
+    clsid:
+        - ECABB0C7-7F19-11D2-978E-0000F8757E2A # SoapMoniker
+    strings:
+        - SoapMoniker
+
+partition_moniker:
+    added_by: David Cannings
+    description: "Partition Moniker"
+    clsid:
+        - ECABB0C5-7F19-11D2-978E-0000F8757E2A # PartitionMoniker
+    strings:
+        - PartitionMoniker
+
+queue_moniker:
+    added_by: David Cannings
+    description: "Queue Moniker"
+    clsid:
+        - ECABAFC7-7F19-11D2-978E-0000F8757E2A # QueueMoniker
+    strings:
+        - QueueMoniker
 
 generic_links:
     added_by: David Cannings

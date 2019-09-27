@@ -192,7 +192,8 @@ package_manager:
     ref: http://quicksand.io/
     clsid:
         - 0003000C-0000-0000-c000-000000000046 # The original clsid used by exploit docs
-    # The name for this is "Package" / "Package2" , which is not unique enough to include
+    strings:
+        - Package
 
 package_manager_poss:
     added_by: David Cannings
@@ -257,3 +258,12 @@ hidden_explorer_window:
         - c08afd90-f2a1-11d1-8455-00a0c91f3880
     strings:
         - ShellBrowserWindow
+
+equation_editor:
+    added_by: David Cannings
+    description: "Equation Editor, legitimate but potential CVE-2017-11882 / CVE-2018-0798"
+    ref: https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2017-11882
+    clsid:
+        - 0002CE02-0000-0000-C000-000000000046
+    strings:
+        - Equation.3

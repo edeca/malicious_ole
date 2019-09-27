@@ -235,6 +235,17 @@ urlmoniker:
         - URLMoniker
         - URL Moniker
 
+composite_moniker:
+    added_by: David Cannings
+    description: "Various monikers, used in CVE-2017-8570"
+    clsid:
+        - 00000309-0000-0000-C000-000000000046 # Composite moniker
+        - 00000303-0000-0000-C000-000000000046 # File moniker
+        - ECABAFC6-7F19-11D2-978E-0000F8757E2A # New moniker
+    strings:
+        - CompositeMoniker
+        - FileMoniker
+
 generic_links:
     added_by: David Cannings
     description: "Unusual CLSIDs to see in a document file, investigate further"
@@ -261,9 +272,20 @@ hidden_explorer_window:
 
 equation_editor:
     added_by: David Cannings
-    description: "Equation Editor, legitimate but potential CVE-2017-11882 / CVE-2018-0798"
+    description: "Equation Editor, legitimate but potential CVE-2017-11882 / CVE-2018-0798 / CVE-2018-0802"
     ref: https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2017-11882
     clsid:
-        - 0002CE02-0000-0000-C000-000000000046
+        - 00021700-0000-0000-C000-000000000046 # Microsoft Equation 2.0
+        - 0002CE02-0000-0000-C000-000000000046 # Microsoft Equation 3.0
+        - 0002CE03-0000-0000-C000-000000000046 # MathType Equation Object
     strings:
         - Equation.3
+
+forms_image:
+    added_by: David Cannings
+    description: "Forms.Image, related to CVE-2015-2424"
+    ref: https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/tsar-team-microsoft-office-zero-day-cve-2015-2424/
+    clsid:
+        - 4C599241-6926-101B-9992-00000B65C6F9 # Forms.Image
+    strings:
+        - Forms.Image
